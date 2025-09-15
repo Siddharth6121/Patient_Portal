@@ -21,14 +21,15 @@ Patient_Portal/
 ---
 
 ## 📊 Dataset
-- Source: [Kaggle – Hospital Readmission Dataset](https://www.kaggle.com/datasets/aneeshtickoo/hospital-readmission-and-length-of-stay)  
-- Train samples: **5000 patients**  
-- Test samples: **2000 patients**  
-- Features used: Age, number of procedures, days in hospital, comorbidity score, gender, etc.  
-- Target: **Readmitted (1) / Not Readmitted (0)**
 
-⚠️ Note: The dataset is **imbalanced** (812 not readmitted vs. 188 readmitted).  
-This was a key limitation that impacted model performance.
+- Source: [Kaggle – Hospital Readmission Dataset by vanpatangan](https://www.kaggle.com/datasets/vanpatangan/readmission-dataset) :contentReference[oaicite:0]{index=0}  
+- Structure: Includes **train_df.csv**, **test_df.csv**, and **sample_submission.csv**. :contentReference[oaicite:1]{index=1}  
+- Features used: age, number of procedures, days in hospital, comorbidity score, gender, etc. :contentReference[oaicite:2]{index=2}  
+- Target: `readmitted` (1 = patient readmitted within 30 days, 0 = not readmitted) :contentReference[oaicite:3]{index=3}  
+
+⚠️ Note: The dataset is **imbalanced** (your local data had ~812 “not readmitted” vs 188 “readmitted”).  
+This imbalance created a major challenge for model performance because models tended to predict the majority class.  
+
 
 ---
 
